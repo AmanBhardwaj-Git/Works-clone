@@ -1,0 +1,185 @@
+@font-face {
+    font-family: freight;
+    src: url(./components/Freight_Big_Pro/Freight\ Big\ Pro\ Light.otf);
+}
+@font-face {
+    font-family: freightitalic;
+    src: url(./components/Freight_Big_Pro/Freight\ Big\ Pro\ Book\ Italic.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'freight';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #060606;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #060606;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#ffffff;
+    overflow: hidden;
+    z-index: 99;
+}
+ #yellow1{
+    position: absolute;
+    height: 100%;
+    z-index: 8;
+    width: 100%;
+    background-color: #f5E41B;
+}
+#yellow2{
+    position: absolute;
+    height: 100%;
+    z-index: 7;
+    width: 100%;
+    background-color: #f5E41B;
+}
+#loader video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 6;
+}
+#loader h1{
+    position: relative;
+    font-size: 7vw;
+    font-weight: 100;
+    letter-spacing: -4px;
+    line-height: 5vw;
+    z-index: 9;
+}
+#nav{
+    position: absolute;
+    width: 100%;
+    padding: 30px 50px;
+    z-index: 10;
+}
+#nav svg{
+    color: #060606;
+}
+    
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #f5E41B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#page1 h1{
+    font-size: 7vw;
+    font-weight: 100;
+    letter-spacing: -4px;
+    line-height: 5vw;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #060606;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+}
+.elem{
+    width: 100%;
+    position: relative;
+}
+.elem h2{
+    font-size: 6.8vw;
+   
+    font-weight: 100;
+    position: relative;
+    z-index: 9;
+    color:white;
+    line-height: 5vw;
+}
+.elem h2 span:hover{
+    cursor: pointer;
+    font-family: freightitalic;
+    text-transform: italic;
+    color:#060606;
+    text-shadow: 2px 2px 2px #f5E41B;
+    filter: drop-shadow(15px 15px 7px black);
+}
+.elem .blur{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top:50%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to right,transparent,#f5e31baf, #fae607,#f5e31baf, transparent );
+  
+}
+.elem .moving{
+    background-color: #f5E41B;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: .2vw 0;
+    position: absolute;
+    top: 50%;
+    transition: all ease 0.4s;
+    opacity: 0;
+}
+
+.elem .moving .moving-in{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moving;
+    animation-duration: 6s;
+    animation-timing-function:linear;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+   
+}
+.elem .moving .moving-in h5{
+
+    color: #060606;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 2.4vw;
+}
+
+@keyframes moving {
+    from{
+       transform: translateX(0); 
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #e8eae9;
+}
