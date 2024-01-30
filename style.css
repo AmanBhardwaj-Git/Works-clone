@@ -140,7 +140,7 @@ html, body{
     white-space: nowrap;
     padding: .2vw 0;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transition: all ease 0.4s;
     opacity: 0;
 }
@@ -175,7 +175,20 @@ html, body{
     
 }
 
-
+@media screen and (max-width:480px) {
+    #nav{
+        padding: 20px 20px;
+     }
+    .elem h2{
+        font-size: 6vh;
+        font-weight: 100;
+        line-height: 10vw;
+    }
+    
+.elem .moving .moving-in h5{
+    font-size: 0.5em;
+}
+}
 
 
 #page3{
