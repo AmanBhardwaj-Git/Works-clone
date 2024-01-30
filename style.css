@@ -36,7 +36,6 @@ body {
   color: #ffffff;
   overflow: hidden;
   z-index: 99;
-  display: none;
 }
 #yellow1 {
   position: absolute;
