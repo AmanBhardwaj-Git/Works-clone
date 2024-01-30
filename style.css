@@ -469,7 +469,8 @@ color: #f5e41b;
       }
       
 #nav #slide {
-    top:2.2vh;
+    top:2.5vh;
+    padding-top: 2px;
     left: 56%;
     width: fit-content;
     align-items: flex-start;
