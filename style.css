@@ -36,6 +36,7 @@ body {
   color: #ffffff;
   overflow: hidden;
   z-index: 99;
+/* display:none; */
 }
 #yellow1 {
   position: absolute;
@@ -446,6 +447,24 @@ color: #f5e41b;
 }
 
 @media screen and (max-width: 480px) {
+  #loader h1 {
+    font-size: 6vh;
+    width: 85%;
+    font-weight: 500;
+    font-style: oblique;
+    letter-spacing: -3px;
+    line-height: 4.5vh;  
+  animation: loaderh1 0.2s linear 0s 1 ;
+  animation-fill-mode: forwards;
+  }
+
+  @keyframes loaderh1 {
+    from{
+      color:black;
+      transform: scale(10);
+    }
+  }
+
   #page1 #lowerpage {
     padding: 20px 20px;
   }
